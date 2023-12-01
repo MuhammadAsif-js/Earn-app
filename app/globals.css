@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+/* CSS */
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .px-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .text-justify {
+    width: 100%;
+  }
+}
+
+/* For tablet devices */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text-justify {
+    width: 100%;
+  }
+}
+
+/* For desktop devices */
+@media (min-width: 1025px) {
+  .px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text-justify {
+    width: 1100px;
+  }
+}
